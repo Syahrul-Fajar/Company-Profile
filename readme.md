@@ -44,26 +44,26 @@ MySQL/MariaDB
 
 Disarankan menggunakan Laragon, XAMPP, atau Docker.
 
-🛠️ Panduan Instalasi Lokal
+# 🛠️ Panduan Instalasi Lokal
 
 Ikuti langkah-langkah di bawah ini untuk menjalankan proyek di komputer lokal Anda.
 
-1. Kloning Repositori
+# 1. Kloning Repositori
 
 Kloning proyek ke direktori lokal Anda:
 
-git clone [URL_REPOSITORY_ANDA]
+git clone https://github.com/Syahrul-Fajar/Company-Profile.git
 cd Company-profile
 
 
-2. Instalasi Dependensi PHP
+# 2. Instalasi Dependensi PHP
 
 Gunakan Composer untuk menginstal semua dependensi backend:
 
 composer install
 
 
-3. Konfigurasi Lingkungan (.env)
+# 3. Konfigurasi Lingkungan (.env)
 
 Salin file contoh lingkungan dan buat kunci aplikasi:
 
@@ -71,7 +71,7 @@ cp .env.example .env
 php artisan key:generate
 
 
-4. Konfigurasi Database
+# 4. Konfigurasi Database
 
 Buka file .env dan perbarui detail koneksi database Anda:
 
@@ -85,29 +85,29 @@ DB_PASSWORD=
 
 Pastikan Anda telah membuat database yang sesuai di server database Anda.
 
-5. Migrasi dan Seeder
+# 5. Migrasi dan Seeder
 
 Jalankan migrasi untuk membuat semua tabel di database:
 
-# Untuk menghapus semua tabel dan membuat ulang (disarankan untuk fresh install)
+Untuk menghapus semua tabel dan membuat ulang (disarankan untuk fresh install)
 php artisan migrate:fresh --seed
 
-# ATAU, jika ingin menjalankan migrasi yang tertunda saja:
-# php artisan migrate
+ATAU, jika ingin menjalankan migrasi yang tertunda saja:
+php artisan migrate
 
 
-6. Instalasi dan Kompilasi Aset Frontend
+# 6. Instalasi dan Kompilasi Aset Frontend
 
 Proyek ini menggunakan Laravel Mix. Instal dan kompilasi aset frontend:
 
-# Instal dependensi Node.js
+Instal dependensi Node.js
 npm install
 
-# Jika Anda ingin kompilasi otomatis saat ada perubahan file:
-# npm run watch
+Jika Anda ingin kompilasi otomatis saat ada perubahan file:
+npm run watch
 
 
-▶️ Menjalankan Aplikasi
+# ▶️ Menjalankan Aplikasi
 
 Jalankan server pengembangan bawaan Laravel:
 
@@ -116,7 +116,7 @@ php artisan serve
 
 Akses aplikasi Anda di browser melalui: http://127.0.0.1:8000
 
-🔐 Akses Admin Panel
+# 🔐 Akses Admin Panel
 
 Admin panel dapat diakses melalui rute /admin.
 
